@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>display_access</h1>
+        <table border="2px">
+            <tr>
+                <th>PK</th>
+                <th>NAME</th>
+                <th>AUTHOR</th>
+                <th>DATE</th>
+                
+            </tr>
+            {% for ao in QLAO %}
+                <tr>
+                    <td>{{ao.pk}}</td>
+                    <td>{{ao.name}}</td>
+                    <td>{{ao.author}}</td>
+                    <td>{{ao.date}}</td>
+                         
+                </tr>
+            {% endfor %}
+
+        </table>
+    </center>
+</body>
+</html>
